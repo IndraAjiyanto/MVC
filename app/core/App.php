@@ -2,6 +2,6 @@
 
 class App{
     public function __construct(){
-        echo "yes";
+        echo "Hello world";
     }
 }
