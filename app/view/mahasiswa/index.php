@@ -1,6 +1,11 @@
+<div class="row">
+    <div class="col-lg-6">
+        <?php Flasher::flash(); ?>
+    </div>
+</div>
 <a href="<?php echo BASEURL; ?>/mahasiswa/tambah"><button type="button" class="btn btn-primary mb-2">Tambah Mahasiswa++</button></a>
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
             <h3><?php echo $data['judul']?></h3> 
             <ul class="list-group">
                 <?php foreach($data['mhs'] as $mhs){?>               
