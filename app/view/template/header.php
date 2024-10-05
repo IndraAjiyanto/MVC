@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>/Home">Home</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo BASEURL; ?>/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo BASEURL; ?>/About">About</a>
+          <a class="nav-link" href="<?php echo BASEURL; ?>/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo BASEURL; ?>/Mahasiswa">Mahasiswa</a>
+          <a class="nav-link" href="<?php echo BASEURL; ?>/mahasiswa">Mahasiswa</a>
         </li>
       </ul>
     </div>
