@@ -25,5 +25,6 @@ class Mahasiswa_model{
         $this->db->bind('prodi', $data['prodi']);
         $this->db->bind('nim', $data['nim']);
         $this->db->execute();
+        return $this->db->rowCount();
     }
 }
