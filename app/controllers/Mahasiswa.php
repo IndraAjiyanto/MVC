@@ -24,6 +24,14 @@ class Mahasiswa extends Controller {
         $this->view('template/footer');
     }
 
+    public function edit($id){
+        $data['judul'] = 'Edit Mahasiswa';
+        $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+        $this->view('template/header',$data);
+        $this->view('mahasiswa/edit',$data);
+        $this->view('template/footer');
+    }
+
     public function tambahAksi(){
         if($this->model('Mahasiswa_model')->tambahMahasiswa($_POST) > 0){;
         Flasher::setFlash('berhasil','ditambahkan','success');
@@ -43,6 +51,18 @@ class Mahasiswa extends Controller {
             exit;
         }else{
             Flasher::setFlash('gagal','dihapus','danger');
+            header('location:'.BASEURL.'/mahasiswa');
+            exit;
+        }
+    }
+
+    public function editMahasiswa(){
+        if($this->model('Mahasiswa_model')->editDataMahasiswa($_POST) > 0){;
+            Flasher::setFlash('berhasil','diedit','success');
+            header('location:'.BASEURL.'/mahasiswa');
+            exit;
+        }else{
+            Flasher::setFlash('gagal','diedit','danger');
             header('location:'.BASEURL.'/mahasiswa');
             exit;
         }

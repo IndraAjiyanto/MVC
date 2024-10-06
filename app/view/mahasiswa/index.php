@@ -12,6 +12,7 @@
   <li class="list-group-item">
     <?php echo $mhs['nama'] ?>
     <a href="<?php echo BASEURL; ?>/mahasiswa/detail/<?php echo $mhs['id'] ?>" class="badge text-bg-primary float-right ml-1">detail</a>
+    <a href="<?php echo BASEURL; ?>/mahasiswa/edit/<?php echo $mhs['id'] ?>" class="badge text-bg-warning float-right ml-1">edit</a>
     <a href="<?php echo BASEURL; ?>/mahasiswa/hapus/<?php echo $mhs['id'] ?>" class="badge text-bg-danger float-right ml-1" onclick="return confirm('ingin menghapusnya?');">hapus</a>
   </li>
             <?php } ?>
